@@ -10,7 +10,7 @@ def pregunta_09():
 
     import pandas as pd
 
-    df_0 = pd.read_csv(r"files\input\tbl0.tsv", sep="\t")
+    df_0 = pd.read_csv(r"files/input/tbl0.tsv", sep="\t")
 
     df_0['year'] = df_0['c3'].str[:4]
     #df_0["year"] = pd.to_datetime(df_0["c3"]).dt.year   

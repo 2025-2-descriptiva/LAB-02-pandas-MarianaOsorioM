@@ -10,7 +10,7 @@ def pregunta_07():
     
     import pandas as pd
 
-    df_1 = pd.read_csv(r"files\input\tbl0.tsv", sep="\t")
+    df_1 = pd.read_csv(r"files/input/tbl0.tsv", sep="\t")
 
     return df_1.groupby('c1')['c2'].sum()
     """

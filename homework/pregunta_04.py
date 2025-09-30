@@ -10,7 +10,7 @@ def pregunta_04():
 
     import pandas as pd
 
-    df_0 = pd.read_csv(r"files\input\tbl0.tsv", sep="\t")   
+    df_0 = pd.read_csv(r"files/input/tbl0.tsv", sep="\t")   
 
     return df_0.groupby('c1')['c2'].mean()  
     """

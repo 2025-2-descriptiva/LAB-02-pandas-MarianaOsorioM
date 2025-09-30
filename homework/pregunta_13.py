@@ -9,8 +9,8 @@ librerias de pandas para resolver las preguntas.
 def pregunta_13():
 
     import pandas as pd
-    df_0 = pd.read_csv(r"files\input\tbl0.tsv", sep="\t")
-    df_2 = pd.read_csv(r"files\input\tbl2.tsv", sep="\t")
+    df_0 = pd.read_csv(r"files/input/tbl0.tsv", sep="\t")
+    df_2 = pd.read_csv(r"files/input/tbl2.tsv", sep="\t")
 
     df_merged = pd.merge(df_0, df_2, on="c0") #creo que el on sería opcional
     df_merged = df_merged.groupby("c1")["c5b"].sum()

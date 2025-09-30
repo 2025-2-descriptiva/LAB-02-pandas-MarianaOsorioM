@@ -10,7 +10,7 @@ def pregunta_12():
     
     import pandas as pd
     
-    df_2 = pd.read_csv(r"files\input\tbl2.tsv", sep="\t")
+    df_2 = pd.read_csv(r"files/input/tbl2.tsv", sep="\t")
     
     df_tmp = df_2.copy()
     df_tmp["pair"] = df_tmp["c5a"] + ":" + df_tmp["c5b"].astype(str)

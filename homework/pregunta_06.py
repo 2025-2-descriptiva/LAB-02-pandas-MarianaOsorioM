@@ -10,7 +10,7 @@ def pregunta_06():
 
     import pandas as pd 
 
-    df_1 = pd.read_csv(r"files\input\tbl1.tsv", sep="\t")
+    df_1 = pd.read_csv(r"files/input/tbl1.tsv", sep="\t")
 
     #unique devuelve arreglos de numpy, por eso convertí a lista
     return sorted(list(df_1['c4'].str.upper().unique()))
